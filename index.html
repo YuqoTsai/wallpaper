@@ -283,6 +283,7 @@
     if (SUPABASE_URL.startsWith('YOUR_')) return; // 尚未設定 Supabase，先不送出
     fetch(`${SUPABASE_URL}/rest/v1/rpc/increment_download`, {
       method: 'POST',
+      keepalive: true, // 確保手機點擊下載、頁面跳轉時，這個請求還是會送出去
       headers: {
         'Content-Type': 'application/json',
         'apikey': SUPABASE_ANON_KEY,
