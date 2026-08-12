@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蘿蔔鳥手機桌布 Robirds Wallpapers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #EAE7E1;
+    --card: #FFFFFF;
+    --ink: #322C25;
+    --ink-soft: #6B6357;
+    --orange: #F0A93B;
+    --blue: #5C8FD6;
+    --clay: #E7BA97;
+    --clay-light: #F1DCC6;
+    --radius: 20px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(240,169,59,0.10), transparent 40%),
+      radial-gradient(circle at 88% 18%, rgba(92,143,214,0.10), transparent 42%);
+    color: var(--ink);
+    font-family: 'Noto Sans TC', 'Baloo 2', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  .wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 24px 40px;
+  }
+
+  header{ text-align:center; margin-bottom: 40px; }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--orange);
+    background: var(--clay-light);
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+  }
+
+  h1{
+    font-family: 'Baloo 2', 'Noto Sans TC', sans-serif;
+    font-weight: 800;
+    font-size: clamp(34px, 6vw, 54px);
+    line-height: 1.15;
+    margin: 0 0 6px;
+    letter-spacing: 0.01em;
+  }
+
+  h1 .en{
+    display:block;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 600;
+    font-size: 0.42em;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    margin-top: 6px;
+  }
+
+  h2{
+    font-weight: 500;
+    font-size: 15.5px;
+    line-height: 1.9;
+    color: var(--ink-soft);
+    max-width: 480px;
+    margin: 22px auto 0;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  @media (max-width: 620px){
+    .grid{ grid-template-columns: 1fr; }
+    .wrap{ padding-top: 48px; }
+  }
+
+  .card{
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: 0 2px 4px rgba(50,44,37,0.04), 0 14px 30px -18px rgba(50,44,37,0.22);
+    display:flex;
+    flex-direction:column;
+    gap: 14px;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+
+  .card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(50,44,37,0.06), 0 22px 40px -18px rgba(50,44,37,0.28);
+  }
+
+  .frame{
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    aspect-ratio: 9 / 19.5;
+    background: var(--bg);
+  }
+
+  .frame img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+  }
+
+  .card-foot{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 4px;
+  }
+
+  .card-title{
+    font-weight: 700;
+    font-size: 14.5px;
+  }
+
+  .card-title small{
+    display:block;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 2px;
+  }
+
+  .dl-btn{
+    display:inline-flex;
+    align-items:center;
+    gap: 7px;
+    background: var(--ink);
+    color: #fff;
+    text-decoration:none;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background .2s ease, transform .15s ease;
+  }
+
+  .dl-btn:hover{ background: var(--orange); }
+  .dl-btn:active{ transform: scale(0.96); }
+
+  .dl-btn svg{ width:14px; height:14px; }
+
+  .dl-btn.done{ background: var(--blue); }
+
+  .notice{
+    text-align:center;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-top: 34px;
+    line-height: 1.8;
+  }
+
+  footer{
+    text-align:center;
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(50,44,37,0.10);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+
+  .flock{
+    display:flex;
+    justify-content:center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .flock span{
+    width:7px; height:7px; border-radius:50%;
+    background: var(--clay);
+  }
+  .flock span:nth-child(2){ background: var(--orange); }
+  .flock span:nth-child(3){ background: var(--blue); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">🎉 1,000 位粉絲慶祝企劃</div>
+      <h1>蘿蔔鳥手機桌布<span class="en">Robirds Wallpapers</span></h1>
+      <h2>為了慶祝蘿蔔鳥突破 1,000 粉，特別製作了幾款手機桌布，自由下載 ~<br>僅供私人自用，請勿商用販售等一切商業行為。</h2>
+    </header>
+
+    <main class="grid" id="grid">
+      <article class="card">
+        <div class="frame"><img src="robirds-trio.png" alt="蘿蔔三鳥桌布" loading="lazy"></div>
+        <div class="card-foot">
+          <div class="card-title">蘿蔔三鳥<small>Trio</small></div>
+          <a class="dl-btn" href="robirds-trio.png" download="蘿蔔鳥桌布-三鳥.png" data-img="robirds-trio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+            下載
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="frame"><img src="robirds-hotpot.png" alt="暖呼呼火鍋桌布" loading="lazy"></div>
+        <div class="card-foot">
+          <div class="card-title">暖呼呼火鍋<small>Hotpot</small></div>
+          <a class="dl-btn" href="robirds-hotpot.png" download="蘿蔔鳥桌布-火鍋.png" data-img="robirds-hotpot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+            下載
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="frame"><img src="robirds-trio-quote.png" alt="蘿蔔三鳥・躺平語錄桌布" loading="lazy"></div>
+        <div class="card-foot">
+          <div class="card-title">躺平語錄款<small>Trio · Quote</small></div>
+          <a class="dl-btn" href="robirds-trio-quote.png" download="蘿蔔鳥桌布-三鳥語錄.png" data-img="robirds-trio-quote">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+            下載
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="frame"><img src="robirds-hotpot-quote.png" alt="暖呼呼火鍋・躺平語錄桌布" loading="lazy"></div>
+        <div class="card-foot">
+          <div class="card-title">火鍋語錄款<small>Hotpot · Quote</small></div>
+          <a class="dl-btn" href="robirds-hotpot-quote.png" download="蘿蔔鳥桌布-火鍋語錄.png" data-img="robirds-hotpot-quote">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg>
+            下載
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <p class="notice">長按圖片或點擊下載按鈕即可存到手機相簿。感謝這一路上有你 🧡</p>
+
+    <footer>
+      <div class="flock"><span></span><span></span><span></span></div>
+      蘿蔔鳥 ROBIRDS 版權所有 © <span id="year"></span>
+    </footer>
+  </div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ------------------------------------------------------------------
+     下載次數統計（Supabase）
+     1. 到 supabase.com 建一個免費專案
+     2. 依照 README.md 的 SQL 建立 downloads 表 + increment_download 函式
+     3. 把下面兩個值換成你自己專案的 Project URL 與 anon public key
+        (Supabase 後台 → Project Settings → API)
+  ------------------------------------------------------------------- */
+  const SUPABASE_URL = 'YOUR_SUPABASE_URL';       // 例如 https://xxxx.supabase.co
+  const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+
+  function trackDownload(imgName) {
+    if (SUPABASE_URL.startsWith('YOUR_')) return; // 尚未設定 Supabase，先不送出
+    fetch(`${SUPABASE_URL}/rest/v1/rpc/increment_download`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+      },
+      body: JSON.stringify({ img: imgName })
+    }).catch(() => {});
+  }
+
+  document.querySelectorAll('.dl-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      trackDownload(btn.dataset.img);
+      btn.classList.add('done');
+      const label = btn.childNodes[btn.childNodes.length - 1];
+      label.textContent = ' 已下載';
+      setTimeout(() => {
+        label.textContent = ' 下載';
+        btn.classList.remove('done');
+      }, 1800);
+    });
+  });
+</script>
+</body>
+</html>
